@@ -153,6 +153,6 @@ public class Car extends Transport{
                 ", registrationNum='" + registrationNum + '\'' +
                 ", numOfSeats=" + numOfSeats +
                 ", winterTires=" + winterTires +
-                '}';
+                "} " + super.toString();
     }
 }
