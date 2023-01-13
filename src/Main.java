@@ -4,7 +4,8 @@ import Transport.Transport;
 public class Main {
     public static void main(String[] args) {
 
-        Car ladaGranta = new Car("Lada", "Granta",0,"Yellow",2015,"Russia", "Automatic", "Седан", "х666хх161", 5,true );
+        Car ladaGranta = new Car("Lada", "Granta",0,"Yellow",2015,"Russia", "Automatic",
+                "Седан", "х666хх161", 5,true, true, false);
 
         System.out.println(ladaGranta);
 

@@ -43,7 +43,8 @@ public class Car extends Transport{
 
 
     public Car(String brand, String model, double engineVolume, String color, int productionYear, String productionCountry,
-               String gearBox, String bodyType, String registrationNum, int numOfSeats, boolean winterTires, boolean  ) {
+               String gearBox, String bodyType, String registrationNum,
+               int numOfSeats, boolean winterTires, Boolean remoteEngineStart, Boolean keylessAccess) {
 
         super(brand, model, color, productionYear, productionCountry);
 
@@ -66,12 +67,9 @@ public class Car extends Transport{
         }
 
         setWinterTires(winterTires);
-        setCarKey(carKey);
+        setCarKey(remoteEngineStart, keylessAccess);
     }
 
-    public Key getCarKey() {
-        return carKey;
-    }
 
 
 
@@ -99,12 +97,8 @@ public class Car extends Transport{
         return winterTires;
     }
 
-    public void setCarKey(boolean ) {
-        if (carKey == null) {
-            this.carKey = new Key(false, false);
-        } else {
-            this.carKey = new Key(true, true);
-        }
+    public void setCarKey(Boolean remoteEngineStart,Boolean keylessAccess ) {
+        this.carKey = new Key(remoteEngineStart, keylessAccess);
     }
 
     public void setEngineVolume(double engineVolume) {
