@@ -42,9 +42,11 @@ public class Car extends Transport{
     private final int DEFAULT_SEATS = 5;
 
 
-    public Car(String brand, String model, double engineVolume, String color, int productionYear, String productionCountry,
+    public Car(String brand, String model, double engineVolume, String color,
+               int productionYear, String productionCountry,
                String gearBox, String bodyType, String registrationNum,
-               int numOfSeats, boolean winterTires, Boolean remoteEngineStart, Boolean keylessAccess) {
+               int numOfSeats, boolean winterTires,
+               Boolean remoteEngineStart, Boolean keylessAccess) {
 
         super(brand, model, color, productionYear, productionCountry);
 
@@ -98,7 +100,10 @@ public class Car extends Transport{
     }
 
     public void setCarKey(Boolean remoteEngineStart,Boolean keylessAccess ) {
+        if (remoteEngineStart != null || keylessAccess != null){
         this.carKey = new Key(remoteEngineStart, keylessAccess);
+        }
+
     }
 
     public void setEngineVolume(double engineVolume) {
