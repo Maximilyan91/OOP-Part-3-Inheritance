@@ -1,14 +1,13 @@
 import Transport.Car;
+import Transport.Transport;
 
 public class Main {
     public static void main(String[] args) {
 
-        Car ladaGranta = new Car(null, "Granta",0,"Yellow",2015,"Russia", "Automatic", "Седан", "х666хх161", 5,true );
-        System.out.println(ladaGranta);
-        System.out.println();
+        Car ladaGranta = new Car("Lada", "Granta",0,"Yellow",2015,"Russia", "Automatic", "Седан", "х666хх161", 5,true );
 
-        ladaGranta.changeTiresOfSeason();
-        System.out.println("ladaGranta = " + ladaGranta);
+        System.out.println(ladaGranta);
+
 
 
 //        Transport.Car audiA8 = new Transport.Car("Audi", "A8 50 L TDI quattro", 0.0,"Black", 2020, "Germany");
