@@ -1,4 +1,5 @@
 import Transport.Car;
+import Transport.Bus;
 import Transport.Transport;
 
 public class Main {
@@ -9,23 +10,25 @@ public class Main {
 
         System.out.println(ladaGranta);
 
+        Bus pazik = new Bus("PAZ", "53210", "Black", 1975,"USSR");
+        System.out.println("pazik = " + pazik);
 
 
 //        Transport.Car audiA8 = new Transport.Car("Audi", "A8 50 L TDI quattro", 0.0,"Black", 2020, "Germany");
 //        audiA8.printAutomobile();
-
+//
 //        System.out.println();
-
- //       Transport.Car bmwZ8 = new Transport.Car("BMW","Z8",3.0,"Black",2021,"Germany");
+//
+//        Transport.Car bmwZ8 = new Transport.Car("BMW","Z8",3.0,"Black",2021,"Germany");
 //        bmwZ8.printAutomobile();
-
+//
 //        System.out.println();
-
+//
 //        Transport.Car kiaSportage = new Transport.Car("Kia", "Spotrage QL",2.4,"Red",2018,"South Korea");
 //        kiaSportage.printAutomobile();
-
+//
 //        System.out.println();
-
+//
 //        Transport.Car hyundaiAvante = new Transport.Car("Hyundai","Avante",1.6, "Orange", 2016, "South Korea" );
 //        hyundaiAvante.printAutomobile();
 

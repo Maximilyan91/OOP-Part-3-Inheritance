@@ -27,7 +27,7 @@ public class Transport {
             this.model = model;
         }
         setColor(color);
-        if (productionYear <= 0 || productionYear < LocalDate.now().getYear()) {
+        if (productionYear <= 0 && productionYear > LocalDate.now().getYear()) {
             this.productionYear = DEFAULT_YEAR;
         } else {
             this.productionYear = productionYear;
