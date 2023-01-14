@@ -43,12 +43,12 @@ public class Car extends Transport{
 
 
     public Car(String brand, String model, double engineVolume, String color,
-               int productionYear, String productionCountry,
+               int productionYear, String productionCountry,int maxSpeed,
                String gearBox, String bodyType, String registrationNum,
                int numOfSeats, boolean winterTires,
                Boolean remoteEngineStart, Boolean keylessAccess) {
 
-        super(brand, model, color, productionYear, productionCountry);
+        super(brand, model, color, productionYear, productionCountry, maxSpeed);
 
         setEngineVolume(engineVolume);
 

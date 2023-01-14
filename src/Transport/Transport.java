@@ -15,7 +15,7 @@ public class Transport {
     private final String DEFAULT_VALUE = "default";
     private final int MAX_SPEED = 999;
 
-    public Transport(String brand, String model, String color, int productionYear, String productionCountry) {
+    public Transport(String brand, String model, String color, int productionYear, String productionCountry, int maxSpeed) {
         if (brand == null || brand.isEmpty() || brand.isBlank()) {
             this.brand = DEFAULT_VALUE;
         } else {
@@ -37,6 +37,7 @@ public class Transport {
         } else {
             this.productionCountry = productionCountry;
         }
+        setMaxSpeed(maxSpeed);
     }
 
     public String getBrand() {
